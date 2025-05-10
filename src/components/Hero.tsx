@@ -33,14 +33,14 @@ const Hero = () => {
           <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2">
             <Button 
               variant="outline" 
-              className="border-gray-300 hover:bg-gray-100 flex items-center gap-2"
+              className="bg-jobfit-blue hover:bg-blue-700 text-white border-jobfit-blue flex items-center gap-2"
             >
               <Apple className="h-5 w-5" />
               Download for iOS
             </Button>
             <Button 
               variant="outline" 
-              className="border-gray-300 hover:bg-gray-100 flex items-center gap-2"
+              className="bg-jobfit-purple hover:bg-purple-700 text-white border-jobfit-purple flex items-center gap-2"
             >
               <Download className="h-5 w-5" />
               Download for Android
