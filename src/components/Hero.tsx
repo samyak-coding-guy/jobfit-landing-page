@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Apple, Download } from "lucide-react";
 
 const Hero = () => {
   return (
@@ -14,12 +14,12 @@ const Hero = () => {
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg md:mx-0 mx-auto">
             Instantly match your resume to any job description. Get an AI-powered fit score, identify skill gaps, and receive smart improvement tips.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
+          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-6">
             <Button 
               size="lg" 
               className="bg-jobfit-blue hover:bg-blue-700 text-white font-medium text-lg px-8 py-6 h-auto"
             >
-              Try JobFit for Free
+              Try JobFitResume AI for Free
             </Button>
             <Button 
               size="lg" 
@@ -28,6 +28,22 @@ const Hero = () => {
             >
               Learn More
               <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
+          <div className="flex flex-wrap justify-center md:justify-start gap-4 mt-2">
+            <Button 
+              variant="outline" 
+              className="border-gray-300 hover:bg-gray-100 flex items-center gap-2"
+            >
+              <Apple className="h-5 w-5" />
+              Download for iOS
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-gray-300 hover:bg-gray-100 flex items-center gap-2"
+            >
+              <Download className="h-5 w-5" />
+              Download for Android
             </Button>
           </div>
         </div>

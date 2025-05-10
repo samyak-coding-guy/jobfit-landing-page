@@ -1,5 +1,7 @@
 
 import React from 'react';
+import { Apple, Download } from 'lucide-react';
+import { Button } from '@/components/ui/button';
 
 const Footer = () => {
   return (
@@ -7,7 +9,7 @@ const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">JobFit<span className="text-jobfit-purple">AI</span></h3>
+            <h3 className="text-xl font-bold mb-4">JobFit<span className="text-jobfit-purple">Resume AI</span></h3>
             <p className="text-gray-400 mb-4">
               AI-powered resume optimization to help you land your dream job.
             </p>
@@ -24,6 +26,16 @@ const Footer = () => {
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
                 </svg>
               </a>
+            </div>
+            <div className="mt-4 flex flex-col space-y-2">
+              <Button variant="outline" size="sm" className="border-gray-700 hover:border-gray-500 flex items-center gap-2 justify-start">
+                <Apple className="h-4 w-4" />
+                <span>Download for iOS</span>
+              </Button>
+              <Button variant="outline" size="sm" className="border-gray-700 hover:border-gray-500 flex items-center gap-2 justify-start">
+                <Download className="h-4 w-4" />
+                <span>Download for Android</span>
+              </Button>
             </div>
           </div>
           
@@ -60,7 +72,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-10 pt-6 flex flex-col md:flex-row items-center justify-between">
           <p className="text-sm text-gray-400">
-            © {new Date().getFullYear()} JobFit AI. All rights reserved.
+            © {new Date().getFullYear()} JobFitResume AI. All rights reserved.
           </p>
           <div className="mt-4 md:mt-0">
             <a href="#" className="text-sm text-gray-400 hover:text-white mr-4">Privacy Policy</a>

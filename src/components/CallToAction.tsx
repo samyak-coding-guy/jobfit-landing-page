@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Apple, Download } from "lucide-react";
 
 const CallToAction = () => {
   return (
@@ -11,7 +11,7 @@ const CallToAction = () => {
             Ready to Land Your Dream Job?
           </h2>
           <p className="text-xl mb-10 text-blue-50">
-            Get started with JobFit Resume AI today and increase your chances of getting hired.
+            Get started with JobFitResume AI today and increase your chances of getting hired.
           </p>
           
           <div className="bg-white bg-opacity-10 backdrop-blur-sm rounded-xl p-8 border border-white border-opacity-20">
@@ -31,12 +31,12 @@ const CallToAction = () => {
             </div>
           </div>
           
-          <div className="mt-12">
+          <div className="mt-12 flex flex-col sm:flex-row justify-center gap-4">
             <Button 
               size="lg" 
-              className="bg-white hover:bg-gray-100 text-jobfit-blue font-medium text-lg px-10 py-6 h-auto mr-4"
+              className="bg-white hover:bg-gray-100 text-jobfit-blue font-medium text-lg px-10 py-6 h-auto"
             >
-              Try JobFit for Free
+              Try JobFitResume AI for Free
             </Button>
             <Button 
               size="lg" 
@@ -45,6 +45,23 @@ const CallToAction = () => {
             >
               Upload Resume
               <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </div>
+          
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <Button 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:bg-opacity-10 flex items-center gap-2"
+            >
+              <Apple className="h-5 w-5" />
+              Download for iOS
+            </Button>
+            <Button 
+              variant="outline" 
+              className="border-white text-white hover:bg-white hover:bg-opacity-10 flex items-center gap-2"
+            >
+              <Download className="h-5 w-5" />
+              Download for Android
             </Button>
           </div>
         </div>
