@@ -95,8 +95,18 @@
   }
 }
 
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+}
+
 .section-padding {
-  @apply px-4 py-16 md:px-8 md:py-20 lg:px-12 lg:py-24;
+  @apply px-4 py-12 sm:px-6 sm:py-16 md:px-8 md:py-20 lg:px-12 lg:py-24;
 }
 
 .container {
@@ -110,4 +120,3 @@
 .testimonial-card {
   @apply bg-white rounded-lg shadow-md p-6 border border-gray-100;
 }
-
