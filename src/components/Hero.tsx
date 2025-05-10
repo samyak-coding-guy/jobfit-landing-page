@@ -14,7 +14,7 @@ const Hero = () => {
           <p className="text-lg md:text-xl text-gray-600 mb-8 max-w-lg md:mx-0 mx-auto">
             Instantly match your resume to any job description. Get an AI-powered fit score, identify skill gaps, and receive smart improvement tips.
           </p>
-          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-6">
+          <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-8">
             <Button 
               size="lg" 
               className="bg-jobfit-blue hover:bg-blue-700 text-white font-medium text-lg px-8 py-6 h-auto"
@@ -47,8 +47,8 @@ const Hero = () => {
             </Button>
           </div>
         </div>
-        <div className="md:w-1/2">
-          <div className="relative">
+        <div className="md:w-1/2 md:pl-8">
+          <div className="relative max-w-md mx-auto md:mx-0">
             <div className="bg-white rounded-lg shadow-xl p-6 border border-gray-100 relative z-10">
               <div className="bg-jobfit-blue text-white rounded-t-md p-3 mb-4">
                 <h3 className="font-semibold">Resume Analysis</h3>
